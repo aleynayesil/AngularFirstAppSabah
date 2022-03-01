@@ -1,0 +1,34 @@
+<!-- <h1>{{ title }}</h1> -->
+<!-- interpolation kullanımı -->
+
+<!-- ReactJS {degikenİsmi} jsx de burada ise {{degiskenismi}} -->
+
+<!-- (angularEventName) angularda eventleri bu formatta çağırırız. Html event kullanmaz. kendine ait event yapısı mevcuttur.  -->
+<!-- <button (click)="click()">Click Me</button> -->
+
+<!-- angularda props tanımlarında dinamik ifade gönderimleri için [attributeName]="attributeValue" title={title} -->
+
+<!-- <button (click)="loadData()">load Data</button>
+
+showHome : {{ showHome }}
+<div *ngIf="showHome">
+  <app-home [title]="title" [content]="title"></app-home>
+</div> -->
+
+<!-- Link to ya benzer -->
+<nav>
+  <a routerLink="/"> Anasayfa </a>
+  <a routerLink="/about">Hakkımızda</a>
+  <a routerLink="/todos">Yapılacaklar</a>
+  <a routerLink="/test">Test</a>
+</nav>
+
+<!-- <app-select (selected)="selectedCity($event)" [items]="['izmir', 'ankara', 'istanbul']"></app-select> -->
+
+<!-- selectedCity function tetiklenince alert seçilen sehir: izmir formatında mesaj verelim. -->
+
+<!-- <select>
+  <option></option>
+</select> -->
+
+<router-outlet></router-outlet>
